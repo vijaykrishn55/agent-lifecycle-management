@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: agent-lifecycle-management
+Version: 1.0.0
+Summary: Modular async lifecycle hooks, token budgets, and JSON telemetry for LLM agents
+Requires-Python: >=3.10
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: structlog>=24.1.0
+Requires-Dist: python-dotenv>=1.0.0
+Provides-Extra: live
+Requires-Dist: openai>=1.12.0; extra == "live"
+Requires-Dist: groq>=0.9.0; extra == "live"
+Requires-Dist: tiktoken>=0.5.2; extra == "live"
+Provides-Extra: test
+Requires-Dist: pytest>=8.0.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.23.0; extra == "test"

@@ -1,0 +1,9 @@
+{
+  "repetitions": 1200,
+  "hooks_added": 3,
+  "baseline_mean_ms": 0.000333,
+  "three_hook_mean_ms": 0.001261,
+  "mean_overhead_ms": 0.000928,
+  "p95_overhead_ms": 0.00104,
+  "under_5ms_target": true
+}

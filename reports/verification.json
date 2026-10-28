@@ -1,0 +1,20 @@
+{
+  "project": "Agent Lifecycle Management",
+  "test_command": "python -m pytest -q",
+  "exit_code": 0,
+  "passed": true,
+  "output": "..............                                                           [100%]\n14 passed in 0.09s",
+  "benchmark_output": "{\n  \"repetitions\": 1200,\n  \"hooks_added\": 3,\n  \"baseline_mean_ms\": 0.000333,\n  \"three_hook_mean_ms\": 0.001261,\n  \"mean_overhead_ms\": 0.000928,\n  \"p95_overhead_ms\": 0.00104,\n  \"under_5ms_target\": true\n}\nBenchmark report: reports/benchmark.json",
+  "checks": [
+    "hook order",
+    "sync/async hooks",
+    "multi-turn context",
+    "token tracking",
+    "prompt/session budget guard",
+    "context trace",
+    "JSONL telemetry",
+    "fallback handling",
+    "circuit breaker",
+    "three-hook overhead"
+  ]
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-lifecycle-management"
+version = "1.0.0"
+description = "Modular async lifecycle hooks, token budgets, and JSON telemetry for LLM agents"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.5.0",
+  "structlog>=24.1.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+live = ["openai>=1.12.0", "groq>=0.9.0", "tiktoken>=0.5.2"]
+test = ["pytest>=8.0.0", "pytest-asyncio>=0.23.0"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
